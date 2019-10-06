@@ -1,6 +1,6 @@
 ---
 title: Old blog posts still available
-date: "2019-01-03T10:07:24.707Z"
+date: "2019-10-01T10:07:24.707Z"
 description: "Where did all the old posts go?"
 ---
 
