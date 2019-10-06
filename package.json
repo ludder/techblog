@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "toms-tech-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "My personal tech blog, based upon the Gatsby starter blog.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tom Greuter <tomgreuter@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ludder/techblog/issues"
   },
   "dependencies": {
     "gatsby": "^2.15.29",
