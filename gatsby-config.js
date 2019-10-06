@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Toms Tech Blog`,
     author: `Tom Greuter`,
-    description: `Some humble notes on web development`,
-    siteUrl: `https://tomgreuter.nl/techblog`,
+    description: `Humble notes on web development`,
+    siteUrl: `https://techblog.tomgreuter.nl`,
     social: {
       twitter: `ludder`,
+      linkedin: `tomgreuter`,
     },
   },
   plugins: [

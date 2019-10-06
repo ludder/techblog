@@ -54,12 +54,10 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by Tom who lives and works in the greater Amsterdam area hunting
-        bugs and optimizing code.
+        Written by Tom who lives, works and sleeps in the greater Amsterdam.
+        area. Responsive web development. React. Freelance.
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <a href="https://tomgreuter.nl">Hire Tom</a>
       </p>
     </div>
   )
