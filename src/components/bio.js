@@ -54,10 +54,9 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by Tom who lives, works and sleeps in the greater Amsterdam.
-        area. Responsive web development. React. Freelance.
-        {` `}
-        <a href="https://tomgreuter.nl">Hire Tom</a>.
+        Written by Tom, freelance front-end web developer in the greater
+        Amsterdam area. Read my <a href="/">Tech blog.</a> Or{" "}
+        <a href="https://tomgreuter.nl">hire me</a>.
       </p>
     </div>
   )
