@@ -40,6 +40,7 @@ export const GlobalStyles = () => {
   // window.location.reload();
 
   const styles =
+    window &&
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
       ? cssDark
