@@ -20,7 +20,7 @@ const cssDark = css`
   :root {
     --bg-color-code: #404;
     --border-color-code: #999;
-    --color-title: #eedfee;
+    --color-title: #88d4ff;
   }
   body {
     background-color: #333;
@@ -65,9 +65,6 @@ export const Article = styled.article`
     color: var(--color-title);
   }
   pre {
-    background-color: var(--bg-color-code);
-    border: 1px solid var(--border-color-code);
-    border-radius: 0.5em;
-    padding: 0.8em 1em 0.6em;
+    margin-bottom: ${rhythm(1)};
   }
 `

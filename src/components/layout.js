@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { rhythm, scale } from "../utils/typography"
+import { H1 } from "../components/ui"
 
 class Layout extends React.Component {
   render() {
@@ -11,11 +11,12 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
+        <H1
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            color: "#007acc",
           }}
         >
           <Link
@@ -28,7 +29,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h1>
+        </H1>
       )
     } else {
       header = (
