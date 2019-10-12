@@ -1,10 +1,34 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import styled from "@emotion/styled"
+
+const H1 = styled.h1`
+  color: #2c4d2e;
+  margin-bottom: 0;
+  margin-top: ${rhythm(1)};
+`
+
+const Par = styled.p`
+  display: block;
+  font-size: 80%;
+  margin-bottom: ${rhythm(1)};
+`
+
+const Article = styled.article`
+  h2 {
+    color: #2c4d2e;
+  }
+  pre {
+    background-color: #fff9ea;
+    border: 1px solid #ccc9aa;
+    border-radius: 0.5em;
+    padding: 0.8em 1em 0.6em;
+  }
+`
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,25 +42,10 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <Article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
+            <H1>{post.frontmatter.title}</H1>
+            <Par>{post.frontmatter.date}</Par>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -47,7 +56,7 @@ class BlogPostTemplate extends React.Component {
           <footer>
             <Bio />
           </footer>
-        </article>
+        </Article>
 
         <nav>
           <ul
