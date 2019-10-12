@@ -40,9 +40,9 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://techblog.tomgreuter.nl",
   "keywords": [
-    "gatsby"
+    "gatsby", "blog"
   ],
   "license": "MIT",
   "main": "n/a",

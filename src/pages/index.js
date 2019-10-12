@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { GlobalStyles, H1, Par, Article } from "../components/ui"
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,12 +15,13 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <GlobalStyles />
         <SEO title="All posts" />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug}>
+            <Article key={node.fields.slug}>
               <header>
                 <h3
                   style={{
@@ -39,7 +41,7 @@ class BlogIndex extends React.Component {
                   }}
                 />
               </section>
-            </article>
+            </Article>
           )
         })}
       </Layout>

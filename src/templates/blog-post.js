@@ -4,31 +4,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import styled from "@emotion/styled"
-
-const H1 = styled.h1`
-  color: #2c4d2e;
-  margin-bottom: 0;
-  margin-top: ${rhythm(1)};
-`
-
-const Par = styled.p`
-  display: block;
-  font-size: 80%;
-  margin-bottom: ${rhythm(1)};
-`
-
-const Article = styled.article`
-  h2 {
-    color: #2c4d2e;
-  }
-  pre {
-    background-color: #fff9ea;
-    border: 1px solid #ccc9aa;
-    border-radius: 0.5em;
-    padding: 0.8em 1em 0.6em;
-  }
-`
+import { GlobalStyles, H1, Par, Article } from "../components/ui"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -38,6 +14,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <GlobalStyles></GlobalStyles>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
