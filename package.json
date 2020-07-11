@@ -42,7 +42,8 @@
   },
   "homepage": "https://techblog.tomgreuter.nl",
   "keywords": [
-    "gatsby", "blog"
+    "gatsby",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
